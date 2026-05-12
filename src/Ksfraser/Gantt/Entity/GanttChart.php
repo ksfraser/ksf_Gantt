@@ -17,8 +17,8 @@ class GanttChart
 {
     private string $id;
     private string $name;
-    private ?DateTime $startDate;
-    private ?DateTime $endDate;
+    private ?DateTime $startDate = null;
+    private ?DateTime $endDate = null;
     private array $tasks;
     private string $timezone;
 

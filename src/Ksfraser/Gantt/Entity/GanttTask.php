@@ -28,6 +28,8 @@ class GanttTask
     private ?string $parentId;
     private string $color;
     private bool $isMileStone;
+    private float $estimatedHours;
+    private float $actualHours;
 
     public function __construct(
         string $id,
@@ -47,6 +49,30 @@ class GanttTask
         $this->parentId = null;
         $this->color = '#3b82f6';
         $this->isMileStone = false;
+        $this->estimatedHours = 0.0;
+        $this->actualHours = 0.0;
+    }
+
+    public function getEstimatedHours(): float
+    {
+        return $this->estimatedHours;
+    }
+
+    public function setEstimatedHours(float $hours): self
+    {
+        $this->estimatedHours = $hours;
+        return $this;
+    }
+
+    public function getActualHours(): float
+    {
+        return $this->actualHours;
+    }
+
+    public function setActualHours(float $hours): self
+    {
+        $this->actualHours = $hours;
+        return $this;
     }
 
     public function getId(): string
