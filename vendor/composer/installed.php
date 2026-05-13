@@ -3,7 +3,7 @@
         'name' => 'ksfraser/ksf-gantt',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'e2b8da8ca3217ce9e42a1553a361d9e8745a9799',
+        'reference' => '6c9ae2f4cbc519efd988476b6c809e9a31ed07c2',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'ksfraser/ksf-gantt' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'e2b8da8ca3217ce9e42a1553a361d9e8745a9799',
+            'reference' => '6c9ae2f4cbc519efd988476b6c809e9a31ed07c2',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
