@@ -235,8 +235,8 @@ class GanttTask
         return [
             'id' => $this->id,
             'name' => $this->name,
-            'start_date' => $this->startDate?->format(DateTimeInterface::ATOM),
-            'end_date' => $this->endDate?->format(DateTimeInterface::ATOM),
+            'start_date' => $this->startDate ? $this->startDate->format(DateTimeInterface::ATOM) : null,
+            'end_date' => $this->endDate ? $this->endDate->format(DateTimeInterface::ATOM) : null,
             'progress' => $this->progress,
             'status' => $this->status,
             'priority' => $this->priority,

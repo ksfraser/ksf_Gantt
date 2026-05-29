@@ -138,7 +138,7 @@ class GanttRendererTest extends TestCase
         $this->assertGreaterThanOrEqual(1, count($events));
         $hasMilestone = false;
         foreach ($events as $event) {
-            if (str_contains($event['id'], 'milestone')) {
+            if (strpos($event['id'], 'milestone') !== false) {
                 $hasMilestone = true;
             }
         }
